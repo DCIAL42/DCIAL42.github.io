@@ -1,0 +1,171 @@
+:root {
+    color-scheme: light dark;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: light-dark(#DBE2EF,#222831);
+    margin: 0;
+}
+
+.page-header {
+    background-color: light-dark(#F9F7F7, #393E46);
+    padding: 5px;
+    margin: 0;
+    border-bottom: 1px light-dark(black,#EEEEEE) solid;
+    position: relative;
+}
+
+.row {
+    display: flex;
+}
+
+.page-body {
+    padding: 20px;
+    border-left: 1px solid light-dark(black,#EEEEEE);
+}
+
+.page-nav {
+    background-color: light-dark(#F9F7F7, #393E46);
+}
+
+.page-nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.page-nav ul {
+    list-style: none;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+.page-nav li {
+    background-color: light-dark(#F9F7F7, #393E46);
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.page-nav li a {
+    text-decoration: none;
+    color: light-dark(black,#EEEEEE);
+}
+
+.page-nav li:hover {
+    background-color: light-dark(#DBE2EF,#222831);
+}
+
+#footer-layout {
+    border-top: 1px light-dark(black,#EEEEEE) solid;
+    background-color: light-dark(#F9F7F7, #393E46);
+    padding: 10px;
+}
+
+input[type=submit] {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: light-dark(#F9F7F7, #393E46);
+    border: none;
+}
+
+input[type=submit]:hover {
+    background-color: light-dark(#DBE2EF,#222831);
+}
+
+form {
+    margin: 10px;
+}
+
+
+/* These are some suggested groupings for your stylesheet... */
+
+
+/* box sizing */
+
+
+/* element styling (e.g. standard p, h1, h2, a, etc) */
+
+
+/* flexible content images code */
+
+
+/* navigation styles */
+
+
+/* page header styles*/
+
+
+/* main layout */
+
+
+
+
+/* styling for the section content */
+
+
+/* background colours for sections */
+
+
+/* form styling */
+#contact {
+    border: 1px solid light-dark(#DBE2EF,#222831);
+    background-color: #393E46;
+    position: fixed;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    width: 40%;
+    height: 40%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+#contact-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: light-dark(#DBE2EF,#222831);
+    border-radius: 20px 20px 0 0;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    -ms-border-radius: 20px 20px 0 0;
+    -o-border-radius: 20px 20px 0 0;
+}
+
+
+/* footer styling */
+
+
