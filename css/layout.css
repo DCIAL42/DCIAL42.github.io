@@ -143,7 +143,7 @@ img {
 /* form styling */
 #contact {
     border: 2px solid light-dark(black,#EEEEEE);
-    background-color: #393E46;
+    background-color: light-dark(#F9F7F7, #393E46);
     position: fixed;
     display: block;
     top: 50%;
