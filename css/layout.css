@@ -96,6 +96,20 @@ form {
     margin: 10px;
 }
 
+#images .container-content .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid light-dark(black,#EEEEEE);
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 400px;
+    border: 2px solid light-dark(black,#EEEEEE);
+}
+
 
 /* These are some suggested groupings for your stylesheet... */
 
@@ -128,10 +142,10 @@ form {
 
 /* form styling */
 #contact {
-    border: 1px solid light-dark(#DBE2EF,#222831);
+    border: 2px solid light-dark(black,#EEEEEE);
     background-color: #393E46;
     position: fixed;
-    display: none;
+    display: block;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
