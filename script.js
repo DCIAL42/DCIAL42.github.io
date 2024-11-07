@@ -1,18 +1,18 @@
 function showContact() {
     document.getElementById("contact").style.display = "block";
     setTimeout(() => {
-        document.getElementById("contact").style.width = "60%";
-        document.getElementById("contact").style.height = "80%";
+        document.getElementById("contact").style.minWidth = "50%";
+        document.getElementById("contact").style.minHeight = "50%";
     }, 0);
 }
 
 function hideContact() {
-    document.getElementById("contact").style.width = "40%";
-    document.getElementById("contact").style.height = "40%";
+    document.getElementById("contact").style.minWidth = "40%";
+    document.getElementById("contact").style.minHeight = "40%";
     document.getElementById("contact").style.display = "none";
 }
 
-let sections = [document.getElementById("home"),document.getElementById("about"),document.getElementById("work"),document.getElementById("images"),document.getElementById("contact-button")];
+let sections = [document.getElementById("home"),document.getElementById("about"),document.getElementById("work"),document.getElementById("images")];
 let navLi = document.querySelectorAll("nav ul li");
 
 window.onscroll = () => {
