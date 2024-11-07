@@ -16,25 +16,26 @@
     <!--REMOVE ANY CLASS OBJECT WHICH YOU DO NOT USE TO STYLE YOUR FILE//-->
 
         <main class= "main-style">
-            <header class="page-header">  <!-- What does the header do? Replace this comment with a brief explanation.  see nav above-->
-                <div class="header-content">  <!-- What is a div?  Replace this comment with an explanation.-->
-                    <h1>Daniel Cooke</h1>
-                    <p>The Ruler of Humanity</p>
-                </div>
-            </header>
-            <!-- You could style Main here if you wish-->
-            <div class="row">
-                <nav class="page-nav col-1"> <!-- the navigation part of the page.  Note links just jump to different parts of the page.-->
+            <div class="row"></div>
+                <!-- You could style Main here if you wish-->
+                <nav class="page-nav col-1 col-s-12"> <!-- the navigation part of the page.  Note links just jump to different parts of the page.-->
                     <ul>
-                        <li><a href="#about">About Me</a></li>
-                        <li><a href="#work">Work Experience</a></li>
-                        <li><a href="#images">Image Gallery</a></li>
-                        <li><a href="#contact-button">Contact Me</a></li>
+                        <li class="home active"><a href="#home">Home</a></li>
+                        <li class="about"><a href="#about">About Me</a></li>
+                        <li class="work"><a href="#work">Work Experience</a></li>
+                        <li class="images"><a href="#images">Image Gallery</a></li>
+                        <li class="contact"><a href="#contact-button">Contact Me</a></li>
                     </ul>
                 </nav>
+                <header id="home" class="page-header col-11 col-s-12">  <!-- What does the header do? Replace this comment with a brief explanation.  see nav above-->
+                    <div class="header-content">  <!-- What is a div?  Replace this comment with an explanation.-->
+                        <h1>Daniel Cooke</h1>
+                        <p>The Ruler of Humanity</p>
+                    </div>
+                </header>
 
             <!--Note here the use of an ID.  the link above actually links to this.  It's a good example of where an ID can be used.  Note also that the section has a class attribute.  use this for styling. -->
-                <div class="page-body col-11">
+                <div class="page-body col-11 col-s-12">
                 <section id="about" class="about-me container">  <!--What does the section do here?  Replace this comment with a brief explanation. -->
                     <div class="container-content">
                         <h2>About Me</h2>
@@ -54,7 +55,7 @@
                         </div>
                     </div>
                 </section>
-                        <br><br>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
                 <section id="images" class="image-gallery container">
                     <div class="container-content">
@@ -62,19 +63,19 @@
                         <div class="content row">
                             <figure class="an-image col-4 col-s-12">
                                 <!-- add image one here with 150 word maximum caption.  You may remove the caption if you wish.  Don't forget to use alt tags. -->
-                                <img src="images/Elliottsmitheitheror55.jpg">
+                                <img src="images/Elliottssmitheitheror55.jpg">
                                 <figcaption class="image-caption"></figcaption>
                             </figure>
 
                             <figure class="an-image col-4 col-s-12">
                                 <!-- add image one here with 150 word maximum caption.  You may remove the caption if you wish.  Don't forget to use alt tags. -->
-                                <img src=images/interstellar-one-sheet-i23157.jpg>
+                                <img src=images/interstsellar-one-sheet-i23157.jpg>
                                 <figcaption class="image-caption"></figcaption>
                             </figure>
 
                             <figure class="an-image col-4 col-s-12">
                                 <!-- add image one here with 150 word maximum caption.  You may remove the caption if you wish.  Don't forget to use alt tags. -->
-                                <img src=images/Sy5e8DmeKIJVjlAGraPAJYkT.jpeg>
+                                <img src=images/Sy5e8DmesKIJVjlAGraPAJYkT.jpeg>
                                 <figcaption class="image-caption"></figcaption>
                             </figure>
                         </div>
@@ -91,24 +92,32 @@
                         <div class="content">
                             <form action="https://formspree.io/[your email address goes here]" method="post">
                                 <!-- Style this nicely.  Don't worry if the form doesn't work, marks here for how well you style it. -->
-                                <p>
-                                    <label for="contact-name">Your Name</label>
-                                    <input id="contact-name" type="text" name="contact-name" />
+                                <p class="row">
+                                    <div class="col-3 label-wrapper">
+                                        <label for="contact-name">Your Name</label>
+                                    </div>
+                                    <input id="contact-name" type="text" name="contact-name" class="col-9">
                                 </p>
-                                <p>
-                                    <label for="contact-email">Your email address</label>
-                                    <input id="contact-email" type="email" name="contact-email" />
+                                <p class="row">
+                                    <div class="col-3 label-wrapper">
+                                        <label for="contact-email">Your email address</label>
+                                    </div>
+                                    <input id="contact-email" type="email" name="contact-email" class="col-9" placeholder="example@email.com">
                                 </p>
-                                <p>
-                                    <label for="contact-phone">Your phone number</label>
-                                    <input id="contact-phone" type="tel" name="contact-phone" />
+                                <p class="row">
+                                    <div class="col-3 label-wrapper">
+                                        <label for="contact-phone">Your phone number</label>
+                                    </div>
+                                    <input id="contact-phone" type="tel" name="contact-phone" class="col-9">
                                 </p>
-                                <p>
-                                    <label for="contact-message">Your message</label>
-                                    <textarea id="contact-message" name="contact-message" rows="5"> </textarea>
+                                <p class="row">
+                                    <div class="col-3 label-wrapper">
+                                        <label for="contact-message">Your message</label>
+                                    </div>
+                                    <textarea id="contact-message" name="contact-message" rows="5" class="col-9"> </textarea>
                                 </p>
-                                <p>
-                                    <input type="submit" value="send my message" />
+                                <p class="row">
+                                    <input type="submit" value="send my message">
                                 </p>
                             </form>
                         </div>
