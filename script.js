@@ -7,8 +7,8 @@ function showContact() {
 }
 
 function hideContact() {
-    document.getElementById("contact").style.minWidth = "40%";
-    document.getElementById("contact").style.minHeight = "40%";
+    document.getElementById("contact").style.minWidth = "30%";
+    document.getElementById("contact").style.minHeight = "30%";
     document.getElementById("contact").style.display = "none";
 }
 

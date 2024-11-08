@@ -4,31 +4,25 @@
         <meta charset="UTF-8">
         <meta name="description" content="Add your meta description" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>A website</title>
-        <!-- add your stylesheet and any other styling code, e.g. google fonts  a good link is https://fonts.google.com/-->
+        <title>Daniel Cooke</title>
         <link rel="stylesheet" href="css/layout.css" />
+        <!-- I got the javascript code for changing the navbar based on scroll position from https://dev.to/areeburrub/change-nav-link-s-style-as-you-scroll-4p62
+        I also got some css for media queries from W3Schools -->
     </head>
-
-    <!-- all the classes below will require some CSS styles to be included in your layout.css file, if you do not
-    include a style for these classes you should remove the class from your html file //-->
     <body>
-
-    <!--REMOVE ANY CLASS OBJECT WHICH YOU DO NOT USE TO STYLE YOUR FILE//-->
-
         <main class= "main-style">
             <div class="row"></div>
-                <!-- You could style Main here if you wish-->
-                <nav class="page-nav col-1 col-s-12"> <!-- the navigation part of the page.  Note links just jump to different parts of the page.-->
+                <nav class="page-nav col-1 col-s-12">
                     <ul>
                         <li class="home active"><a href="#home">Home</a></li>
                         <li class="about"><a href="#about">About Me</a></li>
                         <li class="work"><a href="#work">Work Experience</a></li>
                         <li class="images"><a href="#images">Image Gallery</a></li>
-                        <li onclick="showContact()" class="contact"><a href="#contact-button">Contact Me</a></li>
+                        <li onclick="showContact()" class="contact">Contact Me</li>
                     </ul>
                 </nav>
-                <header id="home" class="page-header col-11 col-s-12">  <!-- What does the header do? Replace this comment with a brief explanation.  see nav above-->
-                    <div class="header-content">  <!-- What is a div?  Replace this comment with an explanation.-->
+                <header id="home" class="page-header col-11 col-s-12">  <!-- What does the header do? It acts as a container for the header of the website, and is automatically located at the top-->
+                    <div class="header-content">  <!-- What is a div?  A div is a container for other html elements-->
                         <h1>Daniel Cooke</h1>
                         <p>The Ruler of Humanity</p>
                     </div>
@@ -36,15 +30,26 @@
 
             <!--Note here the use of an ID.  the link above actually links to this.  It's a good example of where an ID can be used.  Note also that the section has a class attribute.  use this for styling. -->
                 <div class="page-body col-11 col-s-12">
-                <section id="about" class="about-me container">  <!--What does the section do here?  Replace this comment with a brief explanation. -->
+                <section id="about" class="about-me container">  <!--What does the section do here?  It splits the website into different parts, functionally the same as a div -->
                     <div class="container-content">
                         <h2>About Me</h2>
                         <div class="content">
-                            <!-- add your 150 word maximum About Me content here.  Use HTML you know, marks for the HTML.  Marks deducted for poor grammar, spelling errors etc. -->
-                            Hello, my name is Daniel Cooke, I am a computer science student at DCU.
-                            <br>
-                            I started programming when I was around 12 years old
-                            and was very interested in it from the start, but I was not able to do much until I started the leaving cert.
+                            <p>
+                                Hello, my name is Daniel Cooke, I am a computer science student at DCU.
+                                <br>
+                                I started programming when I was around 12 years old
+                                and was very interested in it from the start, but I was not able to do much until I started the leaving cert.
+                                Since then I have been programming both in school/college and in my spare time, trying out different
+                                programming languages, such as:
+                                <ul>
+                                    <li>Python</li>
+                                    <li>C++</li>
+                                    <li>Javascript</li>
+                                    <li>Rust</li>
+                                    <li>Lua</li>
+                                </ul>
+                                as well as different libraries in these languages, such as, SDL in C++, and pygame and tkinter in python.
+                            </p>
                         </div>
                     </div>
                 </section>
@@ -53,8 +58,14 @@
                     <div class="container-content">
                         <h2>Work Experience</h2>
                         <div class="content">
-
-                            <!-- add your 200 word maximum work experience content here.  You can use lists of things as well as paragraphs.  Show off the HTML you know.  marks for the HTML, and how well you use it. marks deducted for poor grammar or spelling errors-->
+                            <p>Over the past few years I have worked on both personal, group, and school programming projects, as well as making a few personal websites.
+                            Some of these projects include:</p>
+                            <ul>
+                                <li>An arcade-like game built with pygame for the leaving cert.</li>
+                                <li>A text based medieval fantasy rpg that I developed with a friend.</li>
+                                <li>Some clones of games with c++ and SDL2, including snake and pong.</li>
+                                <li>A personal website that includes lists of my favourite movies, songs, games, etc.</li>
+                            </ul>
                         </div>
                     </div>
                 </section>
@@ -64,21 +75,18 @@
                         <h2>Image Gallery</h2>
                         <div class="content row">
                             <figure class="an-image col-3 col-s-12">
-                                <!-- add image one here with 150 word maximum caption.  You may remove the caption if you wish.  Don't forget to use alt tags. -->
-                                <img src="images/Elliottsmitheitheror55.jpg">
-                                <figcaption class="image-caption"></figcaption>
+                                <img alt="A game controller rests on a table beside a television." src="images/jakub-zerdzicki-C6oEx8wBTw8-unsplash.jpg">
+                                <figcaption class="image-caption">I like to play video games in my spare time.</figcaption>
                             </figure>
 
                             <figure class="an-image col-3 col-s-12">
-                                <!-- add image one here with 150 word maximum caption.  You may remove the caption if you wish.  Don't forget to use alt tags. -->
-                                <img src=images/interstellar-one-sheet-i23157.jpg>
-                                <figcaption class="image-caption"></figcaption>
+                                <img alt="A man playing an acoustic guitar" src="images/james-kovin-ZbBRXEU4xCU-unsplash.jpg">
+                                <figcaption class="image-caption">I enjoy playing guitar in my free time, and with my friends.</figcaption>
                             </figure>
 
                             <figure class="an-image col-3 col-s-12">
-                                <!-- add image one here with 150 word maximum caption.  You may remove the caption if you wish.  Don't forget to use alt tags. -->
-                                <img src=images/Sy5e8DmeKIJVjlAGraPAJYkT.jpeg>
-                                <figcaption class="image-caption"></figcaption>
+                                <img alt="A laptop screen with some computer code on it" src="images/mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg">
+                                <figcaption class="image-caption">I have been programming consistently since starting the leaving cert, it allows me to put my mind to something.</figcaption>
                             </figure>
                         </div>
                     </div>
@@ -92,7 +100,6 @@
                         </div>
                         <div class="content">
                             <form action="https://formspree.io/[your email address goes here]" method="post">
-                                <!-- Style this nicely.  Don't worry if the form doesn't work, marks here for how well you style it. -->
                                 <p class="row">
                                     <div class="col-3 label-wrapper">
                                         <label for="contact-name">Your Name</label>
@@ -133,11 +140,10 @@
                     <span class="footer-separator">&middot;</span>
                     <span class="footer-text">This is student coursework</span>
                     <span class="footer-separator">&middot;</span>
-                    <span class="footer-text">Lecturer <a href="http://www.computing.dcu.ie/~jkernan">Jane Kernan</a></span>
+                    <span class="footer-text">Lecturer <a href="http://www.computing.dcu.ie/~mscriney">Michael Scriney</a></span>
                     <span class="footer-separator">&middot;</span>
-                    <span class="footer-text"><a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a><br></span>
+                    <span class="footer-text"><a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a></span>
                 </p>
-            <!-- Note that the link to the validator above will only produce results when your page is uploaded to the server, and you click on the link from the browser.-->
             </footer>
         </main>
         <script src="script.js"></script>

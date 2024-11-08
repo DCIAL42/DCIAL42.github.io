@@ -50,7 +50,7 @@ body {
     padding: 0;
 }
 
-.page-nav li {
+.page-nav ul li {
     background-color: light-dark(#F9F7F7, #393E46);
     margin: 5px;
     padding: 10px;
@@ -65,6 +65,7 @@ body {
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
+    cursor: pointer;
 }
 
 .page-nav li a {
@@ -193,37 +194,6 @@ img {
     display: table;
 }
 
-
-/* These are some suggested groupings for your stylesheet... */
-
-
-/* box sizing */
-
-
-/* element styling (e.g. standard p, h1, h2, a, etc) */
-
-
-/* flexible content images code */
-
-
-/* navigation styles */
-
-
-/* page header styles*/
-
-
-/* main layout */
-
-
-
-
-/* styling for the section content */
-
-
-/* background colours for sections */
-
-
-/* form styling */
 #contact {
     border: 1px solid light-dark(black,#EEEEEE);
     background-color: light-dark(#F9F7F7, #393E46);
@@ -236,8 +206,8 @@ img {
     -moz-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
     -o-transform: translate(-50%,-50%);
-    min-width: 40%;
-    min-height: 40%;
+    min-width: 30%;
+    min-height: 30%;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -304,5 +274,3 @@ img {
 .btn-close:hover {
     background-color: light-dark(#F9F7F7, #393E46);
 }
-
-/* footer styling */
