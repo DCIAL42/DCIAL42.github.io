@@ -16,7 +16,6 @@ let sections = [document.getElementById("home"),document.getElementById("about")
 let navLi = document.querySelectorAll("nav ul li");
 
 window.onscroll = () => {
-    console.log("af");
     var current = "";
     sections.forEach((section) => {
         const sectionTop = section.offsetTop;
