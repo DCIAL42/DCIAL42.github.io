@@ -10,7 +10,6 @@
 
 body {
     margin: 0;
-    width: 100%;
 }
 
 .page-header {
@@ -18,15 +17,25 @@ body {
     padding: 15px;
     margin: 0;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
 }
 
 .page-body {
     background-color: light-dark(#DBE2EF,#222831);
-    padding: 20px;
     width: 100%;
+}
+
+.page-body section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(114, 117, 115, 0.2);
+}
+
+.page-body section .container-content {
+    padding: 20px;
 }
 
 .page-nav {
@@ -69,7 +78,7 @@ body {
 }
 
 #footer-layout {
-    background-color: light-dark(#F9F7F7, #393E46);
+    background-color: light-dark(#DBE2EF,#222831);
     padding: 10px;
 }
 
@@ -102,14 +111,20 @@ form {
     margin: 10px;
 }
 
-#images .container-content .content {
-    border: 2px solid light-dark(black,#EEEEEE);
+.image-gallery .container-content .content {
+    border: 1px solid light-dark(black,#EEEEEE);
     align-items: center;
     padding: 10px;
     align-items: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
     background-color: light-dark(#DBE2EF,#222831);
+}
+
+.image-gallery {
+    border-bottom: 1px solid rgba(114, 117, 115, 0.2);
 }
 
 img {
@@ -118,7 +133,7 @@ img {
 }
 
 .an-image {
-    margin: 0;
+    margin: auto;
     padding: 15px;
 }
 
@@ -170,10 +185,6 @@ img {
 
 [class*="col-"] {
     float: left;
-}
-
-.row {
-    background-color: light-dark(#F9F7F7, #393E46);
 }
 
 .row::after {
@@ -239,6 +250,10 @@ img {
     -o-transition: 1s;
 }
 
+.contact-me .container-content {
+    padding: 0!important;
+}
+
 #contact-header {
     display: flex;
     justify-content: space-between;
@@ -253,7 +268,7 @@ img {
 }
 
 .active a {
-    color: white!important;
+    color: light-dark(black,white)!important;
     font-weight: bold;
 }
 
@@ -269,6 +284,25 @@ img {
 
 #contact-button:hover {
     background-color: rgba(62, 57, 214, 0.5);
+}
+
+.btn-close {
+    background-color: light-dark(#DBE2EF,#222831);
+    border: none;
+    padding: 5px;
+    color: light-dark(black,white);
+    font-weight: bold;
+    cursor: pointer;
+    width: 30px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.btn-close:hover {
+    background-color: light-dark(#F9F7F7, #393E46);
 }
 
 /* footer styling */
